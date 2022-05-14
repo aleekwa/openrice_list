@@ -5,16 +5,15 @@ const port = 3000;
 const exphbs = require("express-handlebars");
 
 // setting template engine
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
-app.set('view engine', 'handlebars')
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
 // routes setting
 app.get("/", (req, res) => {
-  res.send("This is my movie list built with Express");
+  res.render("index");
 });
 
 // start and listen on the Express server
 app.listen(port, () => {
   console.log(`Express is listening on localhost:${port}`);
 });
-
