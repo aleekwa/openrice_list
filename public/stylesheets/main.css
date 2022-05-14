@@ -44,6 +44,7 @@ header {
 .btn-major {
   background-color: #9b4b4b;
   color: white;
+  height: 38px;
 }
 
 .form-control:focus {
@@ -51,8 +52,17 @@ header {
   border-color: #ced4da;
 }
 
+.restaurant-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
 .card {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  width: 18rem;
 }
 
 .card img {
